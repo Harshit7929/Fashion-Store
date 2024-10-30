@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<head>
+    <title>Return and Exchange Policy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: lavender;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .btn {
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 align="center">Return and Exchange Policy</h2>
+        <p> We at fashion store accept return or exchange if our customers are not staisfied with our product you can always contact us or raise a return or exchange request through our webstie.</p>
+        <h3>Returns</h3>
+        <p>Applicable products are returnable within the applicable return window if you've received them in a condition that is physically damaged, has missing parts or accessories,  defective or different from their description on the product detail page on Fashion store.
+         <br>Return will be processed only if:
+            <br>   (1) It is determined that the product was not damaged while in your possession.
+            <br>  (2) The product is not different from what was shipped to you.
+            <br> (3) The product is returned in original condition.
+            </p>
+        <h3>Exchange</h3>
+        <p>If you would like to exchange an item for a different size or color, please ensure it meets our exchange policy criteria.<br>
+            If you're looking to return or exchange your order for whatever reason, we’re here to help! We offer free returns within 30 days of purchase.
+            You can return your product for store credit, a different product, or a refund to the original payment method.<br><br>
+Please note the following exceptions to our return and refund policy:<br>
+
+(1) Discounted items are final and cannot be returned or exchanged.<br>
+(2) Returned items must have tags still on and be returned in original product packaging.<br>
+(3) Returned items must have no visible signs of wear or use.<br>
+
+
+ We will send a reply confirmation email if we have accepted your return or exchange
+Print the prepaid return shipping label that you will receive by email.
+Send all items back to us using the label provided..</p>
+        <div>
+            <button class="btn" onclick="raiseReturn()">Raise Return</button>
+            <button class="btn" onclick="raiseExchange()">Raise Exchange</button>
+        </div>
+    </div>
+    <script>
+        function raiseReturn() {
+            window.location.href = "return-request.html";
+        }
+        function raiseExchange() {
+            window.location.href = "exchange-request.html";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+        }
+        #cartItems {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .item {
+            background: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            padding: 15px;
+            width: 45%;
+            display: flex;
+            align-items: center;
+        }
+        .item img {
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+        }
+        .item div {
+            flex-grow: 1;
+        }
+        .remove-btn {
+            padding: 8px 16px;
+            background-color: #7ed957;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .remove-btn:hover {
+            background-color: #cc0000;
+        }
+        .total {
+            text-align: center;
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+        .total span {
+            font-weight: bold;
+            color: #4CAF50;
+        }
+        .order-btn {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+        }
+        .order-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body onload="displayCart()">
+    <h1>Your Cart</h1>
+    <div id="cartItems"></div>
+    <p class="total">Total Cost: <span id="totalSum"></span></p>
+    <button class="order-btn" onclick="redirectToPayment()">Order Now</button>
+
+    <script>
+        function displayCart() {
+            const cartItems = JSON.parse(localStorage.getItem('cart'));
+            const cartItemsContainer = document.getElementById('cartItems');
+            const totalSumElement = document.getElementById('totalSum');
+
+            let totalSum = 0;
+
+            if (cartItems && cartItems.length > 0) {
+                let itemsHtml = cartItems.map(item => {
+                    totalSum += item.price;
+                    return `
+                        <div class="item">
+                            <img src="${item.imageUrl}" alt="${item.name}">
+                            <div>
+                                <h3>${item.name} - ₹${item.price}</h3>
+                                <p>Rating: ${item.rating} | ${item.reviews} reviews</p>
+                                <button onclick="removeFromCart('${item.name}')" class="remove-btn">Remove from Cart</button>
+                            </div>
+                        </div>
+                    `;
+                }).join('');
+                cartItemsContainer.innerHTML = itemsHtml;
+            } else {
+                cartItemsContainer.innerHTML = '<p>Your cart is empty.</p>';
+            }
+
+            totalSumElement.textContent = `₹${totalSum.toFixed(2)}`;
+        }
+
+        function removeFromCart(itemName) {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart = cart.filter(item => item.name !== itemName);
+            localStorage.setItem('cart', JSON.stringify(cart));
+            displayCart();
+        }
+
+        function redirectToPayment() {
+            window.open("payment.html", "_blank");
+        }
+    </script>
+</body>
+</html>

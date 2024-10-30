@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.bg-container {
+    width: 100%;
+    height: 100%;
+    background-image: url('https://media.istockphoto.com/photos/empty-orange-color-shopping-bag-on-the-yellow-background-copy-space-picture-id1178685067?k=6&m=1178685067&s=170667a&w=0&h=s_5jpb9d-I70dJVT3PJExliqKA6LGAjyxdDWuEjEYF4=');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.tourism-card {
+    text-align: center;
+    background-color: #d59f3a;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    padding: 25px;
+}
+
+.main-heading {
+    font-family: "Roboto";
+    color: #cc2525;
+    font-size: 50px; /* specified in your HTML */
+}
+
+.paragraph {
+    font-family: "Roboto";
+    color: black; /* specified in your HTML */
+    font-size: 25px; /* specified in your HTML */
+}
+
+button.submit {
+    color: white;
+    background-color: #cc2525;
+    border-radius: 20px;
+    height: 36px;
+    width: 138px;
+    border: none;
+    font-family: "Bree Serif";
+    font-size: 22px; /* corrected from '22 px' to '22px' */
+}

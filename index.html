@@ -1,0 +1,1498 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Fashion Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    </head>
+    <body>
+        <section class="top">
+            <div class="head">
+                <div class="head-txt">
+                    <p>Free shipping, 30-day return or refund guarantee.</p>
+                </div>
+                <div class="user-actions">
+                    <a target="_blank" href="login.php" id="signin">SIGN IN</a>
+                    <a target="_blank" href="signup.php" id="signup">SIGN UP</a>
+                    <a target="_blank" href="#" id="profile" class="profile-btn"><i class="fas fa fa-user"></i></a>
+                    <a target="_blank" href="wishlist.html" id="wishlist" class="wishlist-btn" target="_blank"><i class="fas fa fa-heart"></i></a>
+                    <a target="_blank" href="cart.html" id="cart" class="cart-btn" target="_blank"><i class="fas fa fa-shopping-cart"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <nav class="navbar">
+            <div class="navbar-container">
+                <input type="checkbox" name="" id="checkbox">
+                <div class="lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span></div>
+                <ul class="menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sellers">Shop</a></li>
+                    <li><a target="_blank" href="https://aws.amazon.com/blogs/">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="logo">
+                    <a href="#"><img src="logo.png" class="logo"></a>
+                </div>
+
+                <h1 style="padding-left: 380px;">Fashion Shop</h1>
+                <div class="search-bar">
+                  <input list="search-items" type="text" placeholder="Search for products, brands and more">
+                  <datalist id="search-items">
+                    <option value="#home">Home Page</option>
+                    <option value="#sellers">Featured Products</option>
+                    <option value="#sellers1">New Arrivals</option>
+                    <option value="#sellers3">Womens's Clothing</option>
+                    <option value="#sellers4">Men's Clothing</option>
+                  </datalist>
+                  <button onclick="navigateToSection()"><i class="fas fa fa-search"></i></button>
+                </div>
+            </div>
+        </nav>
+
+        <section id="home">
+            <div class="home_page">
+                <div class="home_img">
+                    <img src="https://images.hindustantimes.com/img/2022/08/20/1600x900/da8c2298-20c9-11ed-b418-2a963c5c7630_1661028827433.jpg" alt="img">
+                </div>
+                <div class="home_txt">
+                    <p class="collection">SUMMER COLLECTION</p>
+                    <h2>FALL - WINTER<br>Collection 2024</h2>
+                    <div class="home_label">
+                        <p>A specialist label creating luxury essentials. Ethically crafted<br>with an unwavering commitment to exceptional quality.</p>
+                    </div>
+                    <button><a href="#sellers">SHOP NOW</a><i class='bx bx-right-arrow-alt'></i></button>
+                </div>
+            </div>
+        </section>
+        <section id="feature" class="section-p1">
+            <div class="fe-box">
+                <img src="https://i.postimg.cc/PrN2Y6Cv/f1.png" alt="">
+                <a href="https://www.shoppre.com/indian-online-stores" style="text-decoration: none;" target="_blank">
+                  <button style="all: unset; border: 1px solid black;">
+                    <h6>Free Shipping</h6>
+                  </button>
+                </a>
+            </div>
+            <div class="fe-box">
+                <img src="https://i.postimg.cc/qvycxW4q/f2.png" alt="">
+                <a href="https://www.faballey.com/orderstatus" style="text-decoration: none;" target="_blank">
+                  <button style="all: unset; border: 1px solid black;">
+                    <h6>Online Order</h6>
+                  </button>
+                </a>
+            </div>
+            <div class="fe-box">
+                <img src="https://i.postimg.cc/1Rdphyz4/f3.png" alt="">
+                <a href="https://www.coupondunia.in/amazon" style="text-decoration: none;" target="_blank">
+                  <button style="all: unset; border: 1px solid black;">
+                    <h6>Save Money</h6>
+                  </button>
+                </a>
+            </div>
+            <div class="fe-box">
+                <img src="https://i.postimg.cc/GpYc2JFZ/f4.png" alt="">
+                <a href="https://ebooks.inflibnet.ac.in/hsp07/chapter/fashion-promotion-techniques-publicity-special-shows-visual-merchandising/" style="text-decoration: none;" target="_blank">
+                  <button style="all: unset; border: 1px solid black;">
+                    <h6>Promotions</h6>
+                  </button>
+                </a>
+            </div>
+            <div class="fe-box">
+                <img src="https://i.postimg.cc/4yFCwmv6/f5.png" alt="">
+                <a href="https://www.shoppersstop.com/promotions" style="text-decoration: none;" target="_blank">
+                  <button style="all: unset; border: 1px solid black;">
+                    <h6>Happy Sell</h6>
+                  </button>
+                </a>
+            </div>
+            <div class="fe-box">
+                <img src="https://i.postimg.cc/gJN1knTC/f6.png" alt="">
+                <a href="https://www.freshworks.com/freshdesk/pricing/free-support-software/?tactic_id=5627265&utm_source=google-adwords&utm_medium=FD-Search-DSA-Urls-India&utm_campaign=FD-Search-DSA-Urls-India&utm_term=&device=c&matchtype=&network=g&gclid=Cj0KCQjwudexBhDKARIsAI-GWYXCMbm3PrGMBMxJLSIqKM717QEmUzX7QdgZqTK62wr-Si78SseMIDcaAksgEALw_wcB&audience=dsa-1934759735015&ad_id=669892034761&gad_source=1" style="text-decoration: none;" target="_blank">
+                  <button style="all: unset; border: 1px solid black;">
+                    <h6>F24/7 Support</h6>
+                  </button>
+                </a>
+            </div>
+        </section>
+
+
+        <section id="sellers">
+            <div class="seller container">
+                <h2>Featured Products</h2>
+                <div class="best-seller">
+
+                    <div class="best-p1">
+                        <a target="_blank" href="https://amzn.in/d/339QYwB">
+                            <img src="https://m.media-amazon.com/images/I/613XTwL+lhL.SY741.jpg" alt="img">
+                        </a>
+                        <div class="best-p1-txt">
+                            <div class="name-of-p">
+                                <p>Green Checks Shirt - ₹494</p>
+                            </div>
+
+                            <div class="wishlist">
+                              <button class="add-to-wishlist" onclick="toggleWishlistColor(this)">&#10084;</button>
+                            </div>
+                            <div class="rating">
+                                <div class="stars"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-half-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </div>
+                                <div class="reviews"> <p>3.4 | 180 reviews</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="buttons">
+                            <div class="action-buttons">
+                              <div class="add-cart">
+                                <button onclick="addToCart('Green Checks Shirt', 494, 'https://m.media-amazon.com/images/I/613XTwL+lhL.SY741.jpg', '3.4', '180')">Add To Cart</button>
+                              </div>
+
+                                <div class="buy-now">
+                                    <button><a target="_blank" href="payment.html">Buy Now</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="best-p1">
+                        <a target="_blank" href="https://amzn.in/d/anwXoK1">
+                            <img src="https://m.media-amazon.com/images/I/71lFdTJk+9L.SY741.jpg" alt="img">
+                        </a>
+                        <div class="best-p1-txt">
+                            <div class="name-of-p">
+                                <p>Half Sleeve Slim Fit Shirt - ₹279</p>
+                            </div>
+                            <div class="wishlist">
+                                <button class="add-to-wishlist" onclick="toggleWishlistColor(this)">&#10084;</button>
+                            </div>
+                            <div class="rating">
+                                <div class="stars"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-half-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </div>
+                                <div class="reviews"> <p>3.5 | 791 reviews</p>
+                                </div>
+                            </div>
+                            <div class="buttons">
+                                <div class="action-buttons">
+                                    <div class="add-cart">
+                                        <button><a  onclick="addToCart('Half Sleeve Slim Fit Shirtt', 279, 'https://m.media-amazon.com/images/I/71lFdTJk+9L.SY741.jpg', '3.5', '791')">Add To Cart</a></button>
+                                    </div>
+                                    <div class="buy-now">
+                                        <button><a target="_blank" href="payment.html">Buy Now</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="best-p1">
+                        <a target="_blank" href="https://amzn.in/d/j2GN3Gr">
+                            <img src="https://m.media-amazon.com/images/I/71k2hPs04yL.SY741.jpg" alt="img">
+                        </a>
+                        <div class="best-p1-txt">
+                            <div class="name-of-p">
+                                <p>Floral Aliya Cut Kurti - ₹1299</p>
+                            </div>
+                            <div class="wishlist">
+                                <button class="add-to-wishlist" onclick="toggleWishlistColor(this)">&#10084;</button>
+                            </div>
+                            <div class="rating">
+                                <div class="stars"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i>
+                                </div>
+                                <div class="reviews"> <p>5 | 1 reviews</p>
+                                </div>
+                            </div>
+                            <div class="buttons">
+                                <div class="action-buttons">
+                                    <div class="add-cart">
+                                        <button><a onclick="addToCart('Floral Aliya Cut Kurti ', 1299, 'https://m.media-amazon.com/images/I/71k2hPs04yL.SY741.jpg', '5', '1')">Add To Cart</a></button>
+                                    </div>
+                                    <div class="buy-now">
+                                        <button><a target="_blank" href="payment.html">Buy Now</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="best-p1">
+                        <a target="_blank" href="https://amzn.in/d/5KNoYmN">
+                            <img src="https://m.media-amazon.com/images/I/61ym6BfU9gL.SX569.jpg" alt="img">
+                        </a>
+                        <div class="best-p1-txt">
+                            <div class="name-of-p">
+                                <p>Cotton Linen Saree - ₹445</p>
+                            </div>
+                            <div class="wishlist">
+                                <button class="add-to-wishlist" onclick="toggleWishlistColor(this)">&#10084;</button>
+                            </div>
+                            <div class="rating">
+                                <div class="stars"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-half-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </div>
+                                <div class="reviews"> <p>3.5 | 453 reviews</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <div class="action-buttons">
+                                <div class="add-cart">
+                                    <button><a onclick="addToCart('Cotton Linen Saree', 445, 'https://m.media-amazon.com/images/I/61ym6BfU9gL.SX569.jpg', '3.5', '453')" >Add To Cart</a></button>
+                                </div>
+                                <div class="buy-now">
+                                    <button><a target="_blank" href="payment.html">Buy  Now</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="seller container">
+                <h2 id="sellers1">New Arrivals</h2>
+                <div class="best-seller">
+                    <div class="best-p1">
+                        <a target="_blank" href="https://amzn.in/d/cV5AfLK">
+                            <img src="https://m.media-amazon.com/images/I/71Mc4+N-YRL.SY550.jpg" alt="img">
+                        </a>
+                        <div class="best-p1-txt">
+                            <div class="name-of-p">
+                                <p>Floral Print Dress - ₹659</p>
+                            </div>
+                            <div class="wishlist">
+                                <button class="add-to-wishlist" onclick="toggleWishlistColor(this)">&#10084;</button>
+                            </div>
+                            <div class="rating">
+                                <div class="stars"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </div>
+                                <div class="reviews"> <p>4.0 | 659 reviews</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <div class="action-buttons">
+                                <div class="add-cart">
+                                    <button><a onclick="addToCart('Floral Print Dress', 659, 'https://m.media-amazon.com/images/I/71Mc4+N-YRL.SY550.jpg', '4.0', '659')">Add To Cart</a></button>
+                                </div>
+                                <div class="buy-now">
+                                    <button><a target="_blank" href="payment.html">Buy Now</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="best-p1">
+                        <a target="_blank" href="https://amzn.in/d/dMzohrS">
+                            <img src="https://m.media-amazon.com/images/I/71WFCrwsbLL.SX466.jpg" alt="img">
+                        </a>
+                        <div class="best-p1-txt">
+                            <div class="name-of-p">
+                                <p>Puff Sleeve Bodycon Dress - ₹379</p>
+                            </div>
+                            <div class="wishlist">
+                                <button class="add-to-wishlist" onclick="toggleWishlistColor(this)">&#10084;</button>
+                            </div>
+                            <div class="rating">
+                                <div class="stars"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </div>
+                                <div class="reviews"> <p>4.0 | 1220 reviews</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <div class="action-buttons">
+                                <div class="add-cart">
+                                    <button><a onclick="addToCart('Puff Sleeve Bodycon Dress', 379, 'https://m.media-amazon.com/images/I/71WFCrwsbLL.SX466.jpg', '4.0', '1120')">Add To Cart</a></button>
+                                </div>
+                                <div class="buy-now">
+                                    <button><a target="_blank" href="payment.html">Buy Now</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="best-p1">
+                        <a target="_blank" href="https://amzn.in/d/96vQoJ4">
+                            <img src="https://m.media-amazon.com/images/I/61v325EM5SL.SX569.jpg" alt="img">
+                        </a>
+                        <div class="best-p1-txt">
+                            <div class="name-of-p">
+                                <p>Leaf Printed Rayon Shirts - ₹279</p>
+                            </div>
+                            <div class="wishlist">
+                                <button class="add-to-wishlist" onclick="toggleWishlistColor(this)">&#10084;</button>
+                            </div>
+                            <div class="rating">
+                                <div class="stars"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-half-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </div>
+                                <div class="reviews"> <p>3.6 | 1535 reviews</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <div class="action-buttons">
+                                <div class="add-cart">
+                                    <button><a onclick="addToCart('Leaf Printed Rayon Shirts', 279, 'https://m.media-amazon.com/images/I/61v325EM5SL.SX569.jpg', '3.6', '1535')">Add To Cart</a></button>
+                                </div>
+                                <div class="buy-now">
+                                    <button><a target="_blank" href="payment.html">Buy Now</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="best-p1">
+                        <a target="_blank" href="https://amzn.in/d/aKZglVm">
+                            <img src="https://m.media-amazon.com/images/I/719fIbzfiDL.SY606.jpg" alt="img">
+                        </a>
+                        <div class="best-p1-txt">
+                            <div class="name-of-p">
+                                <p>Casual Shirt for Men - ₹1599</p>
+                            </div>
+                            <div class="wishlist">
+                                <button class="add-to-wishlist" onclick="toggleWishlistColor(this)">&#10084;</button>
+                            </div>
+                            <div class="rating">
+                                <div class="stars"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-half-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </div>
+                                <div class="reviews"> <p>3.7 | 2228 reviews</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <div class="action-buttons">
+                                <div class="add-cart">
+                                    <button><a onclick="addToCart('Casual Shirt for Men', 1599, 'https://m.media-amazon.com/images/I/719fIbzfiDL.SY606.jpg', '3.7', '2228')">Add To Cart</a></button>
+                                </div>
+                                <div class="buy-now">
+                                    <button><a target="_blank" href="payment.html">Buy Now</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><br>
+
+
+        <section id="banner" class="section-m1">
+            <h4> Repair Service</h4>
+            <h2>Up to <span>70% off </span> - All Tshirts</h2>
+            <button class="btn normal" onclick="window.open('https://www.bewakoof.com/men-t-shirts', '_blank')">Explore more</button>
+        </section><br>
+        <section>
+          <h1 align="center" id="sellers2" style="color:maroon">Clothing Store</h1><br>
+            <div class="seller container">
+                <h2 id="sellers3">Women's Clothing </h2>
+                <div class="best-seller">
+
+                    <div class="best-p1">
+                        <a target="_blank" href="https://amzn.in/d/5KNoYmN">
+                            <img src="https://m.media-amazon.com/images/I/61ym6BfU9gL.SX569.jpg" alt="img">
+                        </a>
+                        <div class="best-p1-txt">
+                            <div class="name-of-p">
+                                <p>Cotton Linen Saree - ₹445</p>
+                            </div>
+                            <div class="wishlist">
+                                <button class="add-to-wishlist" onclick="toggleWishlistColor(this)">&#10084;</button>
+                            </div>
+                            <div class="rating">
+                                <div class="stars"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-half-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </div>
+                                <div class="reviews"> <p>3.5 | 453 reviews</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <div class="action-buttons">
+                                <div class="add-cart">
+                                    <button><a onclick="addToCart('Cotton Linen Saree ', 445, 'https://m.media-amazon.com/images/I/61ym6BfU9gL.SX569.jpg', '3.5', '453')">Add To Cart</a></button>
+                                </div>
+                                <div class="buy-now">
+                                    <button><a target="_blank" href="payment.html">Buy  Now</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="best-p1">
+                        <a target="_blank" href="https://amzn.in/d/j2GN3Gr">
+                            <img src="https://m.media-amazon.com/images/I/71k2hPs04yL.SY741.jpg" alt="img">
+                        </a>
+                        <div class="best-p1-txt">
+                            <div class="name-of-p">
+                                <p>Floral Aliya Cut Kurti - ₹1299</p>
+                            </div>
+                            <div class="wishlist">
+                                <button class="add-to-wishlist" onclick="toggleWishlistColor(this)">&#10084;</button>
+                            </div>
+                            <div class="rating">
+                                <div class="stars"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i>
+                                </div>
+                                <div class="reviews"> <p>5 | 1 reviews</p>
+                                </div>
+                            </div>
+                            <div class="buttons">
+                                <div class="action-buttons">
+                                    <div class="add-cart">
+                                        <button><a onclick="addToCart('Floral Aliya Cut Kurti ', 1299, 'https://m.media-amazon.com/images/I/71k2hPs04yL.SY741.jpg', '5', '1')">Add To Cart</a></button>
+                                    </div>
+                                    <div class="buy-now">
+                                        <button><a target="_blank" href="payment.html">Buy Now</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="best-p1">
+                        <a target="_blank" href="https://amzn.in/d/4bDdqbB">
+                            <img src="https://m.media-amazon.com/images/I/81hVCiIT2JL.SY550.jpg" alt="img">
+                        </a>
+                        <div class="best-p1-txt">
+                            <div class="name-of-p">
+                                <p>Cotton Silk Kurta Pant - ₹709</p>
+                            </div>
+                            <div class="wishlist">
+                                <button class="add-to-wishlist" onclick="toggleWishlistColor(this)">&#10084;</button>
+                            </div>
+                            <div class="rating">
+                                <div class="stars"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-half-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </div>
+                                <div class="reviews"> <p>3.8 | 465 reviews</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <div class="action-buttons">
+                                <div class="add-cart">
+                                    <button><a onclick="addToCart('Cotton Silk Kurta Pant ', 709, 'https://m.media-amazon.com/images/I/81hVCiIT2JL.SY550.jpg', '3.8', '456')">Add To Cart</a></button>
+                                </div>
+                                <div class="buy-now">
+                                    <button><a target="_blank" href="payment.html">Buy Now</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="best-p1">
+                        <a target="_blank" href="https://amzn.in/d/3Vvn2aq">
+                            <img src="https://m.media-amazon.com/images/I/616uKyd8dXL.SX425.jpg" alt="img">
+                        </a>
+                        <div class="best-p1-txt">
+                            <div class="name-of-p">
+                                <p>Narayana Peta Long Frock - ₹897</p>
+                            </div>
+                            <div class="wishlist">
+                                <button class="add-to-wishlist" onclick="toggleWishlistColor(this)">&#10084;</button>
+                            </div>
+                            <div class="rating">
+                                <div class="stars"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-half-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </div>
+                                <div class="reviews"> <p>2.7 | 24 reviews</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <div class="action-buttons">
+                                <div class="add-cart">
+                                    <button> <a onclick="addToCart('Narayana Peta Long Frock ', 897, 'https://m.media-amazon.com/images/I/616uKyd8dXL.SX425.jpg', '2.7', '24')"> Add To Cart</a></button>
+                                </div>
+                                <div class="buy-now">
+                                    <button><a target="_blank" href="payment.html">Buy Now</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="best-seller">
+                    <div class="best-p1">
+                        <a target="_blank" href="https://amzn.in/d/60mtijo">
+                            <img src="https://m.media-amazon.com/images/I/81DmR2wbCrL.SY550.jpg" alt="img">
+                        </a>
+                        <div class="best-p1-txt">
+                            <div class="name-of-p">
+                                <p>Kurta Set - ₹1389</p>
+                            </div>
+                            <div class="wishlist">
+                                <button class="add-to-wishlist" onclick="toggleWishlistColor(this)">&#10084;</button>
+                            </div>
+                            <div class="rating">
+                                <div class="stars"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                </div>
+                                <div class="reviews"> <p>4.3 | 36 reviews</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <div class="action-buttons">
+                                <div class="add-cart">
+                                    <button><a onclick="addToCart('Kurta Set ', 1389, 'https://m.media-amazon.com/images/I/81DmR2wbCrL.SY550.jpg', '4.3', '36')">Add To Cart</a></button>
+                                </div>
+                                <div class="buy-now">
+                                    <button><a target="_blank" href="payment.html">Buy Now</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="best-p1">
+                        <a target="_blank" href="https://amzn.in/d/a4dZKEN">
+                            <img src="https://m.media-amazon.com/images/I/A1KqTEV2rsL.SY550.jpg" alt="img">
+                        </a>
+                        <div class="best-p1-txt">
+                            <div class="name-of-p">
+                                <p>Red Chikinkari Dress - ₹1200</p>
+                            </div>
+                            <div class="wishlist">
+                                <button class="add-to-wishlist" onclick="toggleWishlistColor(this)">&#10084;</button>
+                            </div>
+                            <div class="rating">
+                                <div class="stars"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-half-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </div>
+                                <div class="reviews"> <p>3.5 | 781 reviews</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <div class="action-buttons">
+                                <div class="add-cart">
+                                    <button><a onclick="addToCart('Red Chikinkari Dress ', 1200, 'https://m.media-amazon.com/images/I/A1KqTEV2rsL.SY550.jpg', '3.5', '781')">Add To Cart</a></button>
+                                </div>
+                                <div class="buy-now">
+                                    <button><a target="_blank" href="payment.html">Buy Now</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="best-p1">
+                        <a target="_blank" href="https://amzn.in/d/iIWMKWa">
+                            <img src="https://m.media-amazon.com/images/I/51ohh-HIsZL.SX385.jpg" alt="img">
+                        </a>
+                        <div class="best-p1-txt">
+                            <div class="name-of-p">
+                                <p>Rayon Kurta Set - ₹699</p>
+                            </div>
+                            <div class="wishlist">
+                                <button class="add-to-wishlist" onclick="toggleWishlistColor(this)">&#10084;</button>
+                            </div>
+                            <div class="rating">
+                                <div class="stars"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-half-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </div>
+                                <div class="reviews"> <p>3.5 | 4 reviews</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <div class="action-buttons">
+                                <div class="add-cart">
+                                    <button><a onclick="addToCart('Rayon Kurta Set ', 699, 'https://m.media-amazon.com/images/I/51ohh-HIsZL.SX385.jpg', '3.5', '4')">Add To Cart</a></button>
+                                </div>
+                                <div class="buy-now">
+                                    <button><a target="_blank" href="payment.html">Buy Now</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="best-p1">
+                        <a target="_blank" href="https://amzn.in/d/iUGZaQx">
+                            <img src="https://m.media-amazon.com/images/I/71JXpE2TQTL.SY550.jpg" alt="img">
+                        </a>
+                        <div class="best-p1-txt">
+                            <div class="name-of-p">
+                                <p>Anarkali Kurta - ₹1369</p>
+                            </div>
+                            <div class="wishlist">
+                                <button class="add-to-wishlist" onclick="toggleWishlistColor(this)">&#10084;</button>
+                            </div>
+                            <div class="rating">
+                                <div class="stars"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star--half-o" aria-hidden="true"></i>
+                                </div>
+                                <div class="reviews"> <p>4.4 | 6 reviews</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <div class="action-buttons">
+                                <div class="add-cart">
+                                    <button><a onclick="addToCart('Anarkali Kurta', 1369, 'https://m.media-amazon.com/images/I/71JXpE2TQTL.SY550.jpg', '4.4', '6')">Add To Cart</a></button>
+                                </div>
+                                <div class="buy-now">
+                                    <button><a target="_blank" href="payment.html">Buy Now</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="best-seller">
+                    <div class="best-p1">
+                        <a target="_blank" href="https://amzn.in/d/cV5AfLK">
+                            <img src="https://m.media-amazon.com/images/I/71Mc4+N-YRL.SY550.jpg" alt="img">
+                        </a>
+                        <div class="best-p1-txt">
+                            <div class="name-of-p">
+                                <p>Floral Print Dress - ₹659</p>
+                            </div>
+                            <div class="wishlist">
+                                <button class="add-to-wishlist" onclick="toggleWishlistColor(this)">&#10084;</button>
+                            </div>
+                            <div class="rating">
+                                <div class="stars"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </div>
+                                <div class="reviews"> <p>4.0 | 659 reviews</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <div class="action-buttons">
+                                <div class="add-cart">
+                                    <button><a onclick="addToCart('Floral Print Dress', 659, 'https://m.media-amazon.com/images/I/71Mc4+N-YRL.SY550.jpg', '4', '659')">Add To Cart</a></button>
+                                </div>
+                                <div class="buy-now">
+                                    <button><a target="_blank" href="payment.html">Buy Now</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="best-p1">
+                        <a target="_blank" href="https://amzn.in/d/dMzohrS">
+                            <img src="https://m.media-amazon.com/images/I/71WFCrwsbLL.SX466.jpg" alt="img">
+                        </a>
+                        <div class="best-p1-txt">
+                            <div class="name-of-p">
+                                <p>Puff Sleeve Bodycon Dress - ₹379</p>
+                            </div>
+                            <div class="wishlist">
+                                <button class="add-to-wishlist" onclick="toggleWishlistColor(this)">&#10084;</button>
+                            </div>
+                            <div class="rating">
+                                <div class="stars"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </div>
+                                <div class="reviews"> <p>4.0 | 1220 reviews</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <div class="action-buttons">
+                                <div class="add-cart">
+                                    <button><a onclick="addToCart('Puff Sleeve Bodycon Dress', 379, 'https://m.media-amazon.com/images/I/71WFCrwsbLL.SX466.jpg', '4.0', '1220')">Add To Cart</a></button>
+                                </div>
+                                <div class="buy-now">
+                                    <button><a target="_blank" href="payment.html">Buy Now</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="best-p1">
+                        <a target="_blank" href="https://amzn.in/d/3vfMSRq">
+                            <img src="https://m.media-amazon.com/images/I/61hvtKpc9+L.SY741.jpg" alt="img">
+                        </a>
+                        <div class="best-p1-txt">
+                            <div class="name-of-p">
+                                <p>Fashion Dress - ₹639</p>
+                            </div>
+                            <div class="wishlist">
+                                <button class="add-to-wishlist" onclick="toggleWishlistColor(this)">&#10084;</button>
+                            </div>
+                            <div class="rating">
+                                <div class="stars"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </div>
+                                <div class="reviews"> <p>4.0 | 662 reviews</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <div class="action-buttons">
+                                <div class="add-cart">
+                                    <button><a onclick="addToCart('Fashion Dress ', 639, 'https://m.media-amazon.com/images/I/61hvtKpc9+L.SY741.jpg', '4.0', '662')">Add To Cart</a></button>
+                                </div>
+                                <div class="buy-now">
+                                    <button><a target="_blank" href="payment.html">Buy Now</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="best-p1">
+                        <a target="_blank" href="https://amzn.in/d/fpi2uPM">
+                            <img src="https://m.media-amazon.com/images/I/61h2ybMU2cL.SY741.jpg" alt="img">
+                        </a>
+                        <div class="best-p1-txt">
+                            <div class="name-of-p">
+                                <p>Mini A-Line Dress - ₹1299</p>
+                            </div>
+                            <div class="wishlist">
+                                <button class="add-to-wishlist" onclick="toggleWishlistColor(this)">&#10084;</button>
+                            </div>
+                            <div class="rating">
+                                <div class="stars"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-half-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </div>
+                                <div class="reviews"> <p>2.5 | 40 reviews</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <div class="action-buttons">
+                                <div class="add-cart">
+                                    <button><a onclick="addToCart('Mini A-Line Dress  ', 1299, 'https://m.media-amazon.com/images/I/61h2ybMU2cL.SY741.jpg', '2.5', '40')">Add To Cart</a></button>
+                                </div>
+                                <div class="buy-now">
+                                    <button><a target="_blank" href="payment.html">Buy Now</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="best-seller">
+                    <div class="best-p1">
+                        <a target="_blank" href="https://amzn.in/d/aZqqbrf">
+                            <img src="https://m.media-amazon.com/images/I/81fHHbm-p-L.SY741.jpg" alt="img">
+                        </a>
+                        <div class="best-p1-txt">
+                            <div class="name-of-p">
+                                <p>Tie-Dye Flare Dress - ₹1499</p>
+                            </div>
+                            <div class="wishlist">
+                                <button class="add-to-wishlist" onclick="toggleWishlistColor(this)">&#10084;</button>
+                            </div>
+                            <div class="rating">
+                                <div class="stars"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </div>
+                                <div class="reviews"> <p>4.0 | 71 reviews</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <div class="action-buttons">
+                                <div class="add-cart">
+                                    <button><a onclick="addToCart('Tie-Dye Flare Dress ', 1499, 'https://m.media-amazon.com/images/I/81fHHbm-p-L.SY741.jpg', '4.0', '71')">Add To Cart</a></button>
+                                </div>
+                                <div class="buy-now">
+                                    <button><a target="_blank" href="payment.html">Buy Now</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="best-p1">
+                        <a target="_blank" href="https://amzn.in/d/ipPXYqp">
+                            <img src="https://m.media-amazon.com/images/I/51QLVcRhlcL.SY741.jpg" alt="img">
+                        </a>
+                        <div class="best-p1-txt">
+                            <div class="name-of-p">
+                                <p>Sleeveless Dress - ₹299</p>
+                            </div>
+                            <div class="wishlist">
+                                <button class="add-to-wishlist" onclick="toggleWishlistColor(this)">&#10084;</button>
+                            </div>
+                            <div class="rating">
+                                <div class="stars"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </div>
+                                <div class="reviews"> <p>3.0 | 21 reviews</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <div class="action-buttons">
+                                <div class="add-cart">
+                                    <button><a onclick="addToCart('Sleeveless Dress ', 299, 'https://m.media-amazon.com/images/I/51QLVcRhlcL.SY741.jpg', '3.0', '21')">Add To Cart</a></button>
+                                </div>
+                                <div class="buy-now">
+                                    <button><a target="_blank" href="payment.html">Buy Now</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="best-p1">
+                        <a target="_blank" href="https://amzn.in/d/cMrydxY">
+                            <img src="https://m.media-amazon.com/images/I/71l7dArz15L.SY741.jpg" alt="img">
+                        </a>
+                        <div class="best-p1-txt">
+                            <div class="name-of-p">
+                                <p>Ruffle Sleeve White Top - ₹341</p>
+                            </div>
+                            <div class="wishlist">
+                                <button class="add-to-wishlist" onclick="toggleWishlistColor(this)">&#10084;</button>
+                            </div>
+                            <div class="rating">
+                                <div class="stars"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-half-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </div>
+                                <div class="reviews"> <p>3.8 | 167 reviews</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <div class="action-buttons">
+                                <div class="add-cart">
+                                    <button><a onclick="addToCart('Ruffle Sleeve White Top', 341, 'https://m.media-amazon.com/images/I/71l7dArz15L.SY741.jpg', '3.8', '167')">Add To Cart</a></button>
+                                </div>
+                                <div class="buy-now">
+                                    <button><a target="_blank" href="payment.html">Buy Now</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="best-p1">
+                        <a target="_blank" href="https://amzn.in/d/7rcGUIr">
+                            <img src="https://m.media-amazon.com/images/I/71hnEW71s7L.SY741.jpg" alt="img">
+                        </a>
+                        <div class="best-p1-txt">
+                            <div class="name-of-p">
+                                <p>Elegant Long Shrug - ₹699</p>
+                            </div>
+                            <div class="wishlist">
+                                <button class="add-to-wishlist" onclick="toggleWishlistColor(this)">&#10084;</button>
+                            </div>
+                            <div class="rating">
+                                <div class="stars"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </div>
+                                <div class="reviews"> <p>4.0 | 326 reviews</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <div class="action-buttons">
+                                <div class="add-cart">
+                                    <button><a onclick="addToCart('Elegant Long Shrug', 699, 'https://m.media-amazon.com/images/I/71hnEW71s7L.SY741.jpg', '4.0', '326')">Add To Cart</a></button>
+                                </div>
+                                <div class="buy-now">
+                                    <button><a href="payment.html">Buy Now</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <h2 id="sellers4">Men's Clothing</h2>
+                <div class="best-seller">
+                    <div class="best-p1">
+                        <a target="_blank" href="https://amzn.in/d/339QYwB">
+                            <img src="https://m.media-amazon.com/images/I/613XTwL+lhL.SY741.jpg" alt="img">
+                        </a>
+                        <div class="best-p1-txt">
+                            <div class="name-of-p">
+                                <p>Green Checks Shirt - ₹494</p>
+                            </div>
+                            <div class="wishlist">
+                                <button class="add-to-wishlist" onclick="toggleWishlistColor(this)">&#10084;</button>
+                            </div>
+                            <div class="rating">
+                                <div class="stars"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-half-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </div>
+                                <div class="reviews"> <p>3.4 | 180 reviews</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <div class="action-buttons">
+                                <div class="add-cart">
+                                    <button><a onclick="addToCart('Green Checks Shirt', 494, 'https://m.media-amazon.com/images/I/613XTwL+lhL.SY741.jpg', '3.4', '180')">Add To Cart</a></button>
+                                </div>
+                                <div class="buy-now">
+                                    <button><a target="_blank" href="payment.html">Buy Now</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="best-p1">
+                        <a target="_blank" href="https://amzn.in/d/anwXoK1">
+                            <img src="https://m.media-amazon.com/images/I/71lFdTJk+9L.SY741.jpg" alt="img">
+                        </a>
+                        <div class="best-p1-txt">
+                            <div class="name-of-p">
+                                <p>Half Sleeve Slim Fit Shirt - ₹1574</p>
+                            </div>
+                            <div class="wishlist">
+                                <button class="add-to-wishlist" onclick="toggleWishlistColor(this)">&#10084;</button>
+                            </div>
+                            <div class="rating">
+                                <div class="stars"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-half-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </div>
+                                <div class="reviews"> <p>3.5 | 791 reviews</p>
+                                </div>
+                            </div>
+                            <div class="buttons">
+                                <div class="action-buttons">
+                                    <div class="add-cart">
+                                        <button><a onclick="addToCart('Half Sleeve Slim Fit Shirt', 1574, 'https://m.media-amazon.com/images/I/71lFdTJk+9L.SY741.jpg', '3.5', '791')">Add To Cart</a></button>
+                                    </div>
+                                    <div class="buy-now">
+                                        <button><a target="_blank" href="payment.html">Buy Now</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="best-p1">
+                        <a target="_blank" href="https://amzn.in/d/96vQoJ4">
+                            <img src="https://m.media-amazon.com/images/I/61v325EM5SL.SX569.jpg" alt="img">
+                        </a>
+                        <div class="best-p1-txt">
+                            <div class="name-of-p">
+                                <p>Leaf Printed Rayon Shirts - ₹279</p>
+                            </div>
+                            <div class="wishlist">
+                                <button class="add-to-wishlist" onclick="toggleWishlistColor(this)">&#10084;</button>
+                            </div>
+                            <div class="rating">
+                                <div class="stars"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-half-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </div>
+                                <div class="reviews"> <p>3.6 | 1535 reviews</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <div class="action-buttons">
+                                <div class="add-cart">
+                                    <button><a onclick="addToCart('Leaf Printed Rayon Shirts', 279, 'https://m.media-amazon.com/images/I/61v325EM5SL.SX569.jpg', '3.6', '1535')">Add To Cart</a></button>
+                                </div>
+                                <div class="buy-now">
+                                    <button><a target="_blank" href="payment.html">Buy Now</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="best-p1">
+                        <a target="_blank" href="https://amzn.in/d/aKZglVm">
+                            <img src="https://m.media-amazon.com/images/I/719fIbzfiDL.SY606.jpg" alt="img">
+                        </a>
+                        <div class="best-p1-txt">
+                            <div class="name-of-p">
+                                <p>Casual Shirt for Men - ₹1599</p>
+                            </div>
+                            <div class="wishlist">
+                                <button class="add-to-wishlist" onclick="toggleWishlistColor(this)">&#10084;</button>
+                            </div>
+                            <div class="rating">
+                                <div class="stars"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-half-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </div>
+                                <div class="reviews"> <p>3.7 | 2228 reviews</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <div class="action-buttons">
+                                <div class="add-cart">
+                                    <button><a onclick="addToCart('Casual Shirt for Men', 1599, 'https://m.media-amazon.com/images/I/719fIbzfiDL.SY606.jpg', '3.7', '2228')">Add To Cart</a></button>
+                                </div>
+                                <div class="buy-now">
+                                    <button><a target="_blank" href="payment.html">Buy Now</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="best-seller">
+                    <div class="best-p1">
+                        <a target="_blank" href="https://amzn.in/d/6QBM5qd">
+                            <img src="https://m.media-amazon.com/images/I/51uzRXWS8YL.SY741.jpg" alt="img">
+                        </a>
+                        <div class="best-p1-txt">
+                            <div class="name-of-p">
+                                <p>Checkered Shirt - ₹458</p>
+                            </div>
+                            <div class="wishlist">
+                                <button class="add-to-wishlist" onclick="toggleWishlistColor(this)">&#10084;</button>
+                            </div>
+                            <div class="rating">
+                                <div class="stars"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-half-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </div>
+                                <div class="reviews"> <p>3.7 | 1288 reviews</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <div class="action-buttons">
+                                <div class="add-cart">
+                                    <button><a  onclick="addToCart('Checkered Shirt', 458, 'https://m.media-amazon.com/images/I/51uzRXWS8YL.SY741.jpg', '3.7', '1288')">Add To Cart</a></button>
+                                </div>
+                                <div class="buy-now">
+                                    <button><a target="_blank" href="payment.html">Buy Now</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="best-p1">
+                        <a target="_blank" href="https://amzn.in/d/hrvj5Mj">
+                            <img src="https://m.media-amazon.com/images/I/71PZralW4hL.SY741.jpg" alt="img">
+                        </a>
+                        <div class="best-p1-txt">
+                            <div class="name-of-p">
+                                <p>Small Checks - ₹459</p>
+                            </div>
+                            <div class="wishlist">
+                                <button class="add-to-wishlist" onclick="toggleWishlistColor(this)">&#10084;</button>
+                            </div>
+                            <div class="rating">
+                                <div class="stars"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-half-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </div>
+                                <div class="reviews"> <p>3.3 | 775 reviews</p>
+                                </div>
+                            </div>
+                            <div class="buttons">
+                                <div class="action-buttons">
+                                    <div class="add-cart">
+                                        <button><a onclick="addToCart('Small Checks', 459, 'https://m.media-amazon.com/images/I/71PZralW4hL.SY741.jpg', '3.3', '775')">Add To Cart</a></button>
+                                    </div>
+                                    <div class="buy-now">
+                                        <button><a target="_blank" href="payment.html">Buy Now</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="best-p1">
+                        <a target="_blank" href="https://amzn.in/d/02Ime0x">
+                            <img src="https://m.media-amazon.com/images/I/51qvQnjCbRL.SY741.jpg" alt="img">
+                        </a>
+                        <div class="best-p1-txt">
+                            <div class="name-of-p">
+                                <p>Solid Black Plain Shirt - ₹462</p>
+                            </div>
+                            <div class="wishlist">
+                                <button class="add-to-wishlist" onclick="toggleWishlistColor(this)">&#10084;</button>
+                            </div>
+                            <div class="rating">
+                                <div class="stars"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </div>
+                                <div class="reviews"> <p>4.0 | 13988 reviews</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <div class="action-buttons">
+                                <div class="add-cart">
+                                    <button><a onclick="addToCart('Solid Black Plain Shirt', 462, 'https://m.media-amazon.com/images/I/51qvQnjCbRL.SY741.jpg', '4.0', '13988')">Add To Cart</a></button>
+                                </div>
+                                <div class="buy-now">
+                                    <button><a target="_blank" href="payment.html">Buy Now</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="best-p1">
+                        <a target="_blank" href="https://amzn.in/d/3bNsJN6">
+                            <img src="https://m.media-amazon.com/images/I/61Jx3bwFmGL.SY741.jpg" alt="img">
+                        </a>
+                        <div class="best-p1-txt">
+                            <div class="name-of-p">
+                                <p>Denim Collar Shirt - ₹569</p>
+                            </div>
+                            <div class="wishlist">
+                                <button class="add-to-wishlist" onclick="toggleWishlistColor(this)">&#10084;</button>
+                            </div>
+                            <div class="rating">
+                                <div class="stars"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </div>
+                                <div class="reviews"> <p>3.9 | 855 reviews</p>
+                                </div>
+                            </div>
+                            <div class="buttons">
+                                <div class="action-buttons">
+                                    <div class="add-cart">
+                                        <button><a onclick="addToCart('Denim Collar Shirt', 569, 'https://m.media-amazon.com/images/I/61Jx3bwFmGL.SY741.jpg', '3.9', '855')">Add To Cart</a></button>
+                                    </div>
+                                    <div class="buy-now">
+                                        <button><a target="_blank" href="payment.html">Buy Now</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="best-seller">
+                    <div class="best-p1">
+                        <a target="_blank" href="https://amzn.in/d/2zDUo2l">
+                            <img src="https://m.media-amazon.com/images/I/71ndD+FDC5L._SX679_.jpg" alt="img">
+                        </a>
+                        <div class="best-p1-txt">
+                            <div class="name-of-p">
+                                <p>Striped Half Sleeved Tshirt - ₹249</p>
+                            </div>
+                            <div class="wishlist">
+                                <button class="add-to-wishlist" onclick="toggleWishlistColor(this)">&#10084;</button>
+                            </div>
+                            <div class="rating">
+                                <div class="stars"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-half-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </div>
+                                <div class="reviews"> <p>3.9 | 26 reviews</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <div class="action-buttons">
+                                <div class="add-cart">
+                                    <button><a onclick="addToCart('Striped Half Sleeved Tshirt', 249, 'https://m.media-amazon.com/images/I/71ndD+FDC5L._SX679_.jpg', '3.9', '26')">Add To Cart</a></button>
+                                </div>
+                                <div class="buy-now">
+                                    <button><a target="_blank" href="payment.html">Buy Now</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="best-p1">
+                        <a target="_blank" href="https://amzn.in/d/h8Qlfpx">
+                            <img src="https://m.media-amazon.com/images/I/71cOYJSlDHL._SX569_.jpg" alt="img">
+                        </a>
+                        <div class="best-p1-txt">
+                            <div class="name-of-p">
+                                <p>Cotton Blend Tshirt - ₹559</p>
+                            </div>
+                            <div class="wishlist">
+                                <button class="add-to-wishlist" onclick="toggleWishlistColor(this)">&#10084;</button>
+                            </div>
+                            <div class="rating">
+                                <div class="stars"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                </div>
+                                <div class="reviews"> <p>4.9 | 20 reviews</p>
+                                </div>
+                            </div>
+                            <div class="buttons">
+                                <div class="action-buttons">
+                                    <div class="add-cart">
+                                        <button><a onclick="addToCart('Cotton Blend Tshirt', 559, 'https://m.media-amazon.com/images/I/71cOYJSlDHL._SX569_.jpg', '4.9', '20')">Add To Cart</a></button>
+                                    </div>
+                                    <div class="buy-now">
+                                        <button><a target="_blank" href="payment.html">Buy Now</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="best-p1">
+                        <a target="_blank" href="https://amzn.in/d/bfL6GiQ">
+                            <img src="https://m.media-amazon.com/images/I/71BowDqDalL._SX569_.jpg" alt="img">
+                        </a>
+                        <div class="best-p1-txt">
+                            <div class="name-of-p">
+                                <p>Oversized Tshirt - ₹359</p>
+                            </div>
+                            <div class="wishlist">
+                                <button class="add-to-wishlist" onclick="toggleWishlistColor(this)">&#10084;</button>
+                            </div>
+                            <div class="rating">
+                                <div class="stars"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                </div>
+                                <div class="reviews"> <p>4.5 | 3 reviews</p>
+                                </div>
+                            </div>
+                            <div class="buttons">
+                                <div class="action-buttons">
+                                    <div class="add-cart">
+                                        <button><a onclick="addToCart('Oversized Tshirt', 359, 'https://m.media-amazon.com/images/I/71BowDqDalL._SX569_.jpg', '4.5', '3')">Add To Cart</a></button>
+                                    </div>
+                                    <div class="buy-now">
+                                        <button><a target="_blank" href="payment.html">Buy Now</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="best-p1">
+                        <a target="_blank" href="https://amzn.in/d/79vz3A7">
+                            <img src="https://m.media-amazon.com/images/I/81B2HqWwyrL._SY741_.jpg" alt="img">
+                        </a>
+                        <div class="best-p1-txt">
+                            <div class="name-of-p">
+                                <p>Round Neck Printed Tshirt - ₹349</p>
+                            </div>
+                            <div class="wishlist">
+                                <button class="add-to-wishlist" onclick="toggleWishlistColor(this)">&#10084;</button>
+                            </div>
+                            <div class="rating">
+                                <div class="stars"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-half-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </div>
+                                <div class="reviews"> <p>3.5 | 63 reviews</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <div class="action-buttons">
+                                <div class="add-cart">
+                                    <button><a onclick="addToCart('Round Neck Printed Tshirt', 349, 'https://m.media-amazon.com/images/I/81B2HqWwyrL._SY741_.jpg', '3.5', '63')">Add To Cart</a></button>
+                                </div>
+                                <div class="buy-now">
+                                    <button><a target="_blank" href="payment.html">Buy  Now</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="best-seller">
+                    <div class="best-p1">
+                        <a target="_blank" href="https://amzn.in/d/dWNpgbL">
+                            <img src="https://m.media-amazon.com/images/I/51MzhEnNr6L._SY741_.jpg" alt="img">
+                        </a>
+                        <div class="best-p1-txt">
+                            <div class="name-of-p">
+                                <p>Sherwani Set - ₹3439</p>
+                            </div>
+                            <div class="wishlist">
+                                <button class="add-to-wishlist" onclick="toggleWishlistColor(this)">&#10084;</button>
+                            </div>
+                            <div class="rating">
+                                <div class="stars"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-halfo" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </div>
+                                <div class="reviews"> <p>3.9 | 104 reviews</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <div class="action-buttons">
+                                <div class="add-cart">
+                                    <button><a onclick="addToCart('Sherwani Set ', 3439, 'https://m.media-amazon.com/images/I/51MzhEnNr6L._SY741_.jpg', '3.9', '104')">Add To Cart</a></button>
+                                </div>
+                                <div class="buy-now">
+                                    <button><a target="_blank" href="payment.html">Buy Now</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="best-p1">
+                        <a target="_blank" href="https://amzn.in/d/dZqobzV">
+                            <img src="https://m.media-amazon.com/images/I/61wAubgL29L._SY741_.jpg" alt="img">
+                        </a>
+                        <div class="best-p1-txt">
+                            <div class="name-of-p">
+                                <p>Kurta Pyjama Set - ₹1901</p>
+                            </div>
+                            <div class="wishlist">
+                                <button class="add-to-wishlist" onclick="toggleWishlistColor(this)">&#10084;</button>
+                            </div>
+                            <div class="rating">
+                                <div class="stars"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-half-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </div>
+                                <div class="reviews"> <p>3.9 | 3702 reviews</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <div class="action-buttons">
+                                <div class="add-cart">
+                                    <button><a onclick="addToCart('Kurta Pyjama Set ', 3702, 'https://m.media-amazon.com/images/I/61wAubgL29L._SY741_.jpg', '3.9', '3702')">Add To Cart</a></button>
+                                </div>
+                                <div class="buy-now">
+                                    <button><a target="_blank" href="payment.html">Buy Now</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="best-p1">
+                        <a target="_blank" href="https://amzn.in/d/gYHWXkQ">
+                            <img src="https://m.media-amazon.com/images/I/51-9OnrMeWL._SY741_.jpg" alt="img">
+                        </a>
+                        <div class="best-p1-txt">
+                            <div class="name-of-p">
+                                <p>Shirt and Dhoti Set - ₹1195</p>
+                            </div>
+                            <div class="wishlist">
+                                <button class="add-to-wishlist" onclick="toggleWishlistColor(this)">&#10084;</button>
+                            </div>
+                            <div class="rating">
+                                <div class="stars"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                </div>
+                                <div class="reviews"> <p>4.4 | 3 reviews</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <div class="action-buttons">
+                                <div class="add-cart">
+                                    <button><a onclick="addToCart('Shirt and Dhoti Set ', 1195, 'https://m.media-amazon.com/images/I/51-9OnrMeWL._SY741_.jpg', '4.4', '3')">Add To Cart</a></button>
+                                </div>
+                                <div class="buy-now">
+                                    <button><a target="_blank" href="payment.html">Buy Now</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="best-p1">
+                        <a target="_blank" href="https://amzn.in/d/aGmoH44">
+                            <img src="https://m.media-amazon.com/images/I/81hUQ6C8ZZL._SY741_.jpg" alt="img">
+                        </a>
+                        <div class="best-p1-txt">
+                            <div class="name-of-p">
+                                <p>Long Sleeves Balzers - ₹2999</p>
+                            </div>
+                            <div class="wishlist">
+                                <button class="add-to-wishlist" onclick="toggleWishlistColor(this)">&#10084;</button>
+                            </div>
+                            <div class="rating">
+                                <div class="stars"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star--half-o" aria-hidden="true"></i>
+                                </div>
+                                <div class="reviews"> <p>4.5 | 29 reviews</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <div class="action-buttons">
+                                <div class="add-cart">
+                                    <button><a onclick="addToCart('Long Sleeves Balzers', 2999, 'https://m.media-amazon.com/images/I/81hUQ6C8ZZL._SY741_.jpg', '4.5', '329')">Add To Cart</a></button>
+                                </div>
+                                <div class="buy-now">
+                                    <button><a target="_blank" href="payment.html">Buy Now</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <section id="sm-banner" class="section-p1">
+            <div class="banner-box">
+                <h4>crazy deals</h4>
+                <h2>buy 1 get 1 free</h2>
+                <span>The best classic dress is on sales at cara</span>
+                <button class="btn white" onclick="window.open('https://www.limeroad.com/b1g1', '_blank')">Learn More</button>
+            </div>
+            <div class="banner-box banner-box2">
+                <h4>spring/summer</h4>
+                <h2>upcoming season</h2>
+                <span>The best classic dress is on sales at cara</span>
+                <button class="btn white" onclick="window.open('https://www.nicobar.com/collections/all-men', '_blank')">Collection</button>
+            </div>
+        </section>
+    </section>
+
+        <section id="contact">
+            <div class="contact container">
+            <form action="/" method="POST">
+                <div class="form">
+                    <div class="form-txt">
+                        <h4>INFORMATION</h4>
+                        <h1>Contact Us</h1>
+                        <span>As you might expect of a company that began as a high-end interiors contractor, we pay strict
+                            attention.</span><br><br>
+                        <h3>India</h3>
+                        <p>Buildings Alyssa,
+                            Begonia and Clover situated in Embassy Tech Village, Outer Ring Road,<br>
+                            Devarabeesanahalli Village,Varthur Hobli, Bengaluru - 560103, India. 411014</p><br><br>
+                        <h3>USA</h3>
+                        <p>195 E Parker Square Dr, Parker, CO 801<br>+43 982-314-0958</p>
+                    </div>
+                    <div class="form-details">
+                        <input type="text" name="name" id="name" placeholder="Name" required>
+                        <input type="email" name="email" id="email" placeholder="Email" required>
+                        <textarea name="message" id="message" cols="52" rows="7" placeholder="Message" required></textarea>
+                        <button>SEND MESSAGE</button>
+                    </div>
+                </div>
+            </form>
+            <p><b>HISTORY OF FASHION SHOP: </b>
+                Becoming India's no. 1 fashion destination is not an easy feat. Sincere efforts, digital enhancements and a team of dedicated personnel with an equally loyal customer base have made Fashion shop the online platform that it is today. The original B2B venture for personalized gifts was conceived in 2017 but transitioned into a full-fledged ecommerce giant within a span of few years. Today Fashion shop sits on top of the online fashion game with an astounding social media following, a loyalty program dedicated to its customers, and tempting, hard-to-say-no-to deals.<br><br>
+                The Fashion Shop app came into existence in the year 2020 to further encourage customers' shopping. Download the app on your Android or IOS device this minute to experience fashion like never before.</p>
+        </div>
+        </section>
+        <footer>
+            <div class="footer-container container">
+                <div class="content_1">
+                  <h1 style="color: aliceblue;">Fashion Shop</h1>
+                    <p>The customer is at the heart of our<br>unique business model, which includes<br>design.</p>
+                    <img src="https://i.postimg.cc/Nj9dgJ98/cards.png" alt="cards">
+                </div>
+                <div class="content_2">
+                    <h4><b>SHOPPING</b></h4>
+                    <a href="#sellers">Featured Products</a>
+                    <a href="#sellers1">New Arrivals</a>
+                    <a href="#sellers2">Clothing Store
+                        <div class="clothing-store" style="padding-left: 20px;">
+                            <ul type="square">
+                                <li><a href="#sellers3">Women's Clothing</a></li>
+                                <li><a href="#sellers4">Men's Clothing</a></li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+                <div class="content_3">
+                    <h4>CUSTOMER CARE</h4>
+                    <a href="#contact">Contact Us</a>
+                    <a  target="_blank" href="payment.html">Payment Method</a>
+                    <a target="_blank" href="delivery.html">Delivery</a>
+                    <a target="_blank" href="return_exchange.html">Return and Exchange</a>
+                </div>
+                <div class="content_4">
+                    <h4>NEWSLETTER</h4>
+                    <p>Be the first to know about new<br>arrivals, look books, sales & promos!</p>
+                    <div class="f-mail">
+                        <input type="email" placeholder="Your Email">
+                        <i class='bx bx-envelope'></i>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+            <div class="f-design">
+                <div class="f-design-txt container">
+                    <div class="flex-container">
+                        <p>In case of any concern Contact Us.</p>
+                        <p class="align-center">© 2024 www.fashion shop.com. All rights reserved.</p>
+                        <p>A fashion company.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
